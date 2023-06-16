@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>GK - Lab4</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600"
+        height="600" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid" style="background: #eeeeee">
+     
+         <defs>
+            <g id="rysowanie"> 
+
+                <polygon points="190,379 134,397 100,350 134,302 190,320" fill="black">
+                    <animateTransform attributeName="transform" type="rotate" from="0 150 350" to="360 150 350"
+                                      dur="10s" repeatCount="indefinite" />
+                </polygon>
+
+
+                <polygon points="490,459 434,477 400,430 434,382 490,400" fill="black">
+                    <animateTransform attributeName="transform" type="rotate" from="0 450 430" to="360 450 430"
+                    dur="10s" repeatCount="indefinite" />
+                </polygon>
+
+
+
+                <rect x="120" y="390" width="320" height="25" transform="translate(135, -65) rotate(15)" fill="red" />
+                <polygon points="270,600 300,400 330, 600" />
+
+          
+                
+            </g>
+        </defs>
+
+        <use xlink:href="#rysowanie" fill="blue" transform="translate(43, 0)" />
+        <use xlink:href="#rysowanie" fill="purple" transform="translate(-56, -145) scale(0.7, 0.7)" />
+        <use xlink:href="#rysowanie" fill="green" transform="translate(335, -130) scale(0.5, 0.5)" /> 
+    </svg>
+
+</body>
+</html>
